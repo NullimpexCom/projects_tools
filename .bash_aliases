@@ -1,0 +1,6 @@
+alias gdn='git pull --rebase origin master'
+alias gup='git push origin master'
+alias gdu='git pull --rebase upstream master'
+alias pbuild1='./autogen.sh && ./configure'
+alias pbuild2='make -j 4 && make check'
+alias pbuild3='make install && sudo ldconfig'
