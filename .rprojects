@@ -2,16 +2,19 @@
 # .rprojects
 cd ~/projects/libzmq
 git pull --rebase upstream master 
+git push origin master
 ./autogen.sh && ./configure 
 make -j 4 && make check
 sudo make install && sudo ldconfig 
 cd ~/projects/libsodium
 git pull --rebase upstream master 
+git push origin master
 ./autogen.sh && ./configure 
 make -j 4 && make check
 sudo make install && sudo ldconfig 
 cd ~/projects/czmq
 git pull --rebase upstream master 
+git push origin master
 ./autogen.sh && ./configure 
 make -j 4 && make check
 sudo make install && sudo ldconfig 
